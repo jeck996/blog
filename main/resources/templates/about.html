@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="zh-CN">
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>关于我-个人博客</title>
@@ -51,7 +51,7 @@
           <div class="right" id="c_right">
           <div class="s_about">
           <h2>关于博主</h2>
-           <img src="images/my.jpg" width="230" height="230" alt="博主"/>
+           <img th:src="@{ ./images/my.jpg }" width="230" height="200" alt="博主"/>
            <p>博主：XX</p>
            <p>职业：web前端、视觉设计</p>
            <p>简介：</p>
